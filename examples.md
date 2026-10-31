@@ -30,6 +30,19 @@ chmod +x /root/scripts/diskcheck.sh
 bash /root/scripts/diskcheck.sh
 ```
 ```bash
+Reverse engineer an existing web app from outside with REA, then rebuild its core as a new app.
+Never copy its code, text, images, logo, name or exact visual design.
+App to study: www.azerty.com
+New: name: xxxx
+Look: Arabic interface, right to left, font xx. Colour    
+```
+```bash
+explain this command: find . -name '*.log' -mtime +7 -delete
+```
+```bash
+explain this command: find . -name '*.log' -mtime +7 -delete
+```
+```bash
 explain this command: find . -name '*.log' -mtime +7 -delete
 ```
 
