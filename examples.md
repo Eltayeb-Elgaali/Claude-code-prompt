@@ -37,7 +37,9 @@ New: name: xxxx
 Look: Arabic interface, right to left, font xx. Colour    
 ```
 ```bash
-explain this command: find . -name '*.log' -mtime +7 -delete
+In /root/deploy.sh, the rsync command drops the trailing slash on $SRC so it
+copies the folder instead of its contents. Fix that line and leave the rest
+unchanged.
 ```
 ```bash
 explain this command: find . -name '*.log' -mtime +7 -delete
