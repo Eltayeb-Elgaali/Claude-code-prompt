@@ -1,6 +1,4 @@
-```bash
-why does 'permission denied' show up when I run ./deploy.sh
-```
+
 ```bash
 explain this command: find . -name '*.log' -mtime +7 -delete
 ```
