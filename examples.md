@@ -42,10 +42,54 @@ copies the folder instead of its contents. Fix that line and leave the rest
 unchanged.
 ```
 ```bash
-explain this command: find . -name '*.log' -mtime +7 -delete
+claude -p --permission-mode plan "Outline the steps to add config backups to /root/tool.sh. Do not change any files."
 ```
 ```bash
-explain this command: find . -name '*.log' -mtime +7 -delete
+cat > /root/brief.md <<'EOF'
+Goal: a greeting script for our servers.
+Target file: /root/greet.sh
+Done when: running it prints "Hello from <hostname>" using the real hostname,
+and it exits 0.
+EOF
+
+claude -p --permission-mode acceptEdits "Build the script described in /root/brief.md"
+
+chmod +x /root/greet.sh
+/root/greet.sh > /root/greet.out
+cat /root/greet.out
 ```
+```bash
+# Acme API
+
+## Commands
+- Build: `make build`
+- Test: `pytest -q`
+- Run locally: `make dev` (needs `DATABASE_URL`)
+
+## Conventions
+- 4-space indent, type hints on all public functions
+- New routes go in `src/routes/`, one file per resource
+
+## Gotchas
+- `generated/` is rebuilt by `make build`; never edit it by hand
+```
+```bash
+Running diskspace.sh gives: "line 5: DIR: unbound variable". Fix it so it runs cleanly.
+Run the test and, if it fails, fix the cause and run it again until it passes.
+```
+```bash
+You are a terse Linux tutor. Answer in one sentence, no preamble.
+```
+```bash
+You are a terse Linux tutor. Answer in one sentence, no preamble.
+```
+```bash
+You are a terse Linux tutor. Answer in one sentence, no preamble.
+```
+```bash
+You are a terse Linux tutor. Answer in one sentence, no preamble.
+```
+
+
 
 
