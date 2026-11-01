@@ -1,7 +1,4 @@
 ```bash
-write a bash script that prints how much free disk space is left
-```
-```bash
 why does 'permission denied' show up when I run ./deploy.sh
 ```
 ```bash
